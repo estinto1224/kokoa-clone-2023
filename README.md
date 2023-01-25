@@ -1,7 +1,3 @@
-#Kokoa Clone 2023 Update
+# Kokoa Clone 2023 Update
 
-NEW!!
-
-update update
-
-update2
+HTML && CSS So much better
