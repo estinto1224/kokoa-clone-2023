@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to cocoa talk</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__colmum">
         <span>No Service</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z"
-          />
-        </svg>
+
+        <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__colmum">
         <span>18:43</span>
@@ -31,9 +21,30 @@
 
       <div class="status-bar__colmum">
         <span>110%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
         <!--battery icon-->
         <!--lingtning icon-->
       </div>
     </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header_title">welcome to kokoa clone</h1>
+      <p class="welcome-header_test">
+        If youn have a kokoa Account, log in with you
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Email of Phone" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kakao Account or Password </a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/440cb919d2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
