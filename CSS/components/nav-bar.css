@@ -1,0 +1,12 @@
+
+.nav
+{
+background-color: antiquewhite;
+padding: 20px 40px; 
+}
+
+.nav__list 
+{display: flex;
+    justify-content: space-between;
+
+}
