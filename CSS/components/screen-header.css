@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding:var(--horizontal-space);
+    margin-bottom:15px;
 }
 
 .screen-header__title
@@ -21,4 +22,6 @@ span {
  {text-align: center;
 display:block;
 background-color: aqua;
+
+
 padding: 15px 0px;}
