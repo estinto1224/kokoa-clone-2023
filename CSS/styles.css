@@ -10,7 +10,7 @@
 
 @import "screen/login.css";
 @import "screen/friends.css";
-
+@import "screen/find.css";
 
 @import "components/user-component.css";
 @import "components/badge.css";
