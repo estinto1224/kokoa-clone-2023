@@ -2,18 +2,24 @@
 @import "reset.css";
 @import "variable.css";
 
-@import "components/status-bar.css";
-@import "components/nav-bar.css";
 
 @import "welcome-header.css";
-@import "components/screen-header.css";
 
+
+/* components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/screen-header.css";
+@import "components/icon-row.css";
+
+
+/* screens*/
 @import "screen/login.css";
 @import "screen/friends.css";
 @import "screen/find.css";
 
-@import "components/user-component.css";
-@import "components/badge.css";
 
 body { 
      
