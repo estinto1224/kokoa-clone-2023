@@ -5,7 +5,6 @@
 
 @import "welcome-header.css";
 
-
 /* components*/
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
@@ -19,6 +18,7 @@
 @import "screen/login.css";
 @import "screen/friends.css";
 @import "screen/find.css";
+@import "screen/more.css";
 
 
 body { 
