@@ -186,9 +186,10 @@ top :20px; }
 
 .reply .reply__column:first-child,
 .reply .fa-smile-wink, 
-.reply button {
-    transition: opacity : 1s ease-in-out; }
-
+.reply button 
+{
+transition: opacity 1s ease-in-out; 
+}
 
 .reply:focus-within .reply__column:first-child,
 .reply:focus-within .fa-smile-wink, 
