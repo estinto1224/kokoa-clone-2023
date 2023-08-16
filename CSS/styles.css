@@ -13,7 +13,7 @@
 @import "components/screen-header.css";
 @import "components/alt-screen-header.css";
 @import "components/icon-row.css";
-
+@import "components/no-mobile.css";
 
 /* screens*/
 @import "screen/login.css";
@@ -22,6 +22,7 @@
 @import "screen/more.css";
 @import "screen/settings.css";
 @import "screen/chat.css";
+
 
 
 body { 
