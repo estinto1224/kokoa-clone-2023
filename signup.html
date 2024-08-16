@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NV7P4NP');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PV9S9PRCMT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PV9S9PRCMT');
+  </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>대한민국 No.1 게임포털 피망</title>
+  <link type="text/css" rel="stylesheet" href="https://file.pmang.com/images/pgm/account/css/common.css?d=20230209" />
+  <link type="text/css" rel="stylesheet" href="https://file.pmang.com/css/common_new.css?d=201692216" />
+
+  <script type="text/javascript" src="/global/js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/global/js/validation.js?d=20230307"></script>
+  <script type="text/javascript" src="/global/js/captcha.js?d=20200220"></script>
+  <script type="text/javascript" src="/global/js/NWDebug.js"></script>
+
+    <!--  <script>document.domain = "pmang.com";</script>-->
+
+  <script>
+  //<!--
+    var GpmSDK = { // {{{
+      refresh : function() { // {{{
+        $.ajax({
+          type:"GET",
+          url:'//' +  location.hostname + '/Oauth2/refresh_token?client_id=GPM&redirect_uri=https://account.pmang.com',
+          async:true,
+          cache:false,
+          dataType:"json",
+          success:function(result){
+          }
+        });
+      }, // }}}
+      getCookie : function( name ) { // {{{
+        var nameOfCookie = name + "=";
+        var x = 0;
+        while ( x <= document.cookie.length )
+        {
+          var y = (x+nameOfCookie.length);
+          if ( document.cookie.substring( x, y ) == nameOfCookie )
+          {
+            if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+              endOfCookie = document.cookie.length;
+            return unescape( document.cookie.substring( y, endOfCookie ) );
+          }
+          x = document.cookie.indexOf( " ", x ) + 1;
+          if ( x == 0 )
+            break;
+        }
+        return "";
+      } // }}}
+    }; // }}}
+    $(document).ready(function() {
+      if( GpmSDK.getCookie('nw_ssid') != '' )
+        setInterval("GpmSDK.refresh()", 1000*60*60);
+    });
+  //-->
+  </script>
+  <script src="https://static.pmang.com/lib/pmang-gnb-footer.js"></script>
+</head>
+
+  <script type="text/javascript">
+    $(function(){ //{{{
+      $('.agree input').attr({'checked':false});
+      $('.agree input').get(0).focus();
+
+      $('#tos_all').change(function(){
+        if($(this).is(':checked')) {
+          $('#tos_use').attr({'checked':true});
+          $('#tos_private').attr({'checked':true});
+        }else{
+          $('#tos_use').attr({'checked':false});
+          $('#tos_private').attr({'checked':false});
+        }
+      });
+
+      $('#tos_use').change(function() {
+        if ($(this).is(':checked')) {
+          if($('#tos_private').is(':checked')){
+            $('#tos_all').attr({'checked':true});
+          }else{
+            $('#tos_all').attr({'checked':false});
+          }
+        }else{
+          $('#tos_all').attr({'checked':false});
+        }
+      });
+
+      $('#tos_private').change(function() {
+        if ($(this).is(':checked')) {
+          if($('#tos_use').is(':checked')){
+            $('#tos_all').attr({'checked':true});
+          }else{
+            $('#tos_all').attr({'checked':false});
+          }
+        }else{
+          $('#tos_all').attr({'checked':false});
+        }
+      });
+    }); //}}}
+
+    function goSubmit() //{{{
+    {
+      if( $("input#tos_use:not(:checked)").length )
+      {
+        $("#divAlert").css("border", "2px solid red");
+
+        $(".policy_agree_info p.msg_info").show();
+        $(".policy_agree_info p.msg_info span.txt em").html("피망 이용약관 및 개인정보 수집 및 이용에 모두 동의해 주세요.");
+        $("input#tos_use").focus();
+        return false;
+      }
+      if( $("input#tos_private:not(:checked)").length )
+      {
+        $("#divAlert").css("border", "2px solid red");
+        $(".policy_agree_info p.msg_info").show();
+        $(".policy_agree_info p.msg_info span.txt em").html("피망 이용약관 및 개인정보 수집 및 이용에 모두 동의해 주세요.");
+        $("input#tos_private").focus();
+        return false;
+      }
+
+      $("#tosform").submit();
+      return false;
+    } //}}}
+
+    function goResticted() //{{{
+    {
+      $(".policy_agree_info p.msg_info").show();
+      $(".policy_agree_info p.msg_info span.txt em").html("가입이 불가능한 지역입니다.");
+      return false;
+    } //}}}
+
+    function popup_agree() //{{{
+    {
+      window.open('https://www.pmang.com/policy/popup/privacy','_blank', "width=460, height=620");
+    } //}}}
+  </script>
+  <link type="text/css" rel="stylesheet" href="https://file.pmang.com/css/nabi/terms_content.css" />
+  <style type="text/css">
+  .terms_content{ margin:20px; }
+  </style>
+
+<body>
+        <link type="text/css" rel="stylesheet" href="https://file.pmang.com/css/global_gnb_nabi_n3.css" />
+    <div id="GlobalGNB"><a href="https://www.pmang.com"><img src="https://file.pmang.com/images/pmang/one/gnb/logo_pmang.gif" class="logo" /></a></div><div id="GlobalGNB_position"></div>
+  
+<div class="wrapper"><div class="container">
+  <div class="header">
+    <div class="title"><h1>피망 회원가입</h1></div>
+    <p class="map"><strong>약관동의</strong> <span class="arw">></span> 정보입력 <span class="arw">></span> 가입완료</p>
+  </div><hr />
+  
+  <div class="contents">
+    <p class="msg_sub">
+      피망 회원가입을 위해 이용약관 · 개인정보 수집 및 이용안내를 읽고 동의해 주세요.<br />
+      </p>
+   
+    <form name="tosform" id="tosform" method="post" action="/SignUp_account/registform">
+    <input type="hidden" id="path" name="path" value="HOME" />
+    <input type="hidden" id="redirect_uri" name="redirect_uri" value="https://www.pmang.com" />
+    <input type="hidden" id="strYmdHis" name="strYmdHis" value="" />
+    <input type="hidden" id="fingerprint" name="fingerprint" value="" />
+
+    <div class="linebox_list" style="margin-bottom:10px">
+      <div id="divAlert" style="margin:2px 5px 0 0">
+      <ul class="agree" style="margin-bottom:5px">
+        
+        <li>
+          <span class="txt"><input type="checkbox" class="checkbox" id="tos_use" name="tos_use" value="Y" /><label for="tos_use" style="cursor:pointer">(필수) 피망 이용약관 동의 </label></span>
+          <span class="right"><a href="#TOS_AGREE_USE" class="btn_in"><span>자세히보기</span></a></span>
+        </li>
+        <li>
+          <span class="txt"><input type="checkbox" class="checkbox" id="tos_private" name="tos_private" value="Y" /><label for="tos_private" style="cursor:pointer">(필수) 개인정보 수집 및 이용동의</label></span>
+          <span class="right"><a href="#TOS_AGREE_PRIVATE" class="btn_in"><span>자세히보기</span></a></span>
+        </li>
+        <li>
+            <span class="txt"><input type="checkbox" class="checkbox" id="tos_use" name="tos_use" value="Y" /><label for="tos_use" style="cursor:pointer">(선택) 광고성 정보 수집 및 이용동의 </label></span>
+            <span class="right"><a href="#TOS_AGREE_USE" class="btn_in"><span>자세히보기</span></a></span>
+          </li>
+      </ul>
+      </div>
+    </div>
+    
+</div>          </div>
+        </div>      
+      </div>
+    </div>
+
+      <!-- 버튼 -->
+      <div class="btn_bt">
+                                <a href="https://www.pmang.com" class="btn_basic"><span>동의</span></a>
+                                <a href="#" onclick="goSubmit(); return false;" class="btn_basic odd"><span><img src="https://sfile.pmang.com/images/pgm/account/img/bu_btn_check_odd.gif" alt="" class="bu ico_check" />전체동의</span></a>
+      </div>  
+  </div><hr />
+	
+      <script type="text/javascript">
+      pmang.ui.footer('narrow'); 
+    </script>
+  </div></div>
+</body>
+</html>
